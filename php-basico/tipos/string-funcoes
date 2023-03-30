@@ -1,0 +1,34 @@
+<?php
+
+// contar caracteres
+echo strlen('contagem');
+echo "<br>";
+
+// pegar parte de string; pega contando do final também
+// se não informa segundo parâmetro, pega até final da string 
+echo substr('contagem', 0, 3);
+echo "<br>";
+echo substr('contagem', -4, 2);
+echo "<br>";
+echo substr('contagem', 3);
+echo "<br>";
+echo substr('contagem', -3);
+echo "<br>";
+
+// adicionar caracteres extras right padrão, left e both
+echo str_pad("janeiro", 10, "*", STR_PAD_LEFT);
+echo "<br>";
+
+// maiusculos e minusculos
+echo strtolower('Emerson');
+echo "<br>";
+echo strtoupper('Emerson');
+echo "<br>";
+
+// encontrar ocorrência
+echo strstr("image.jpg", ".");
+echo "<br>";
+
+// substituir caracteres
+echo str_replace("a", "x", "batata");
+echo "<br>";
