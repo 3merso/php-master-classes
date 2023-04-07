@@ -22,3 +22,6 @@ echo '<br>';
 // exponenciação
 echo $num ** $num2;
 echo '<br>';
+
+// prioridade conforme matemática básica
+echo 2 + 3 * 7;
