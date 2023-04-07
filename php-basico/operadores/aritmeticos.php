@@ -1,26 +1,26 @@
 <?php
 
 $num1 = 10;
-$num2 = 20;
+$num2 = 2;
 
 // manipulações básicas
-echo $num + $num2;
+echo $num1 + $num2;
 echo '<br>';
 
-echo $num - $num2;
+echo $num1 - $num2;
 echo '<br>';
 
-echo $num * $num2;
+echo $num1 * $num2;
 echo '<br>';
 
-echo $num / $num2;
+echo $num1 / $num2;
 echo '<br>';
 
-echo $num % $num2;
+echo $num1 % $num2;
 echo '<br>';
 
 // exponenciação
-echo $num ** $num2;
+echo $num1 ** $num2;
 echo '<br>';
 
 // prioridade conforme matemática básica
