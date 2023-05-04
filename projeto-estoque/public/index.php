@@ -7,7 +7,7 @@
 // localhost:3030?nome=emerson
 // localhost:3030?nome=emerson&idade=30
 
-$url = $_GET['url'];
+$url = isset($_GET['url']) ? $_GET['url'] : '/';
 
 if ($url == '/') {
     echo 'Página inicial';
