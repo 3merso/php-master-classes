@@ -10,7 +10,8 @@
 $url = isset($_GET['url']) ? $_GET['url'] : '/';
 
 if ($url == '/') {
-    echo 'Página inicial';
+    include '../templates/lista.php'; // apenas inclui, causa warning se não encontrado
+    // require '../templates/lista.php'; // se não encontrado, fatal error
 }
 
 if ($url == '/produto') {
