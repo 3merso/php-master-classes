@@ -1,5 +1,5 @@
 <?php
-
+require __DIR__ . '/../bootstrap.php';
 // expor apenas a pasta public: php -S localhost:3030 -t public
 
 // $_GET; superglobal para pegar parametros de url
@@ -10,10 +10,11 @@
 $url = isset($_GET['url']) ? $_GET['url'] : '/';
 
 if ($url == '/') {
-    include '../templates/lista.php'; // apenas inclui, causa warning se não encontrado
+    include TEMPLATES . '/lista.php'; // apenas inclui, causa warning se não encontrado
     // require '../templates/lista.php'; // se não encontrado, fatal error
 }
 
 if ($url == '/produto') {
-    echo 'Detalhes do produto';
+    require TEMPLATES . '/produto.php'; 
+    // echo 'Detalhes do produto';
 }
