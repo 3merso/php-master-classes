@@ -15,6 +15,23 @@ if ($url == '/') {
 }
 
 if ($url == '/produto') {
+
+    $codigoProduto = isset($_GET['codigo']) ? $_GET['codigo'] : '';
+
+    if ($codigoProduto) {
+        $produtoDetalhe = '';
+        foreach (PRODUTOS as $p) {
+            if ($produto['codigo'] == $codigoProduto) {
+                $produtoDetalhe = $produto;
+                break;
+            }
+        }
+    }
+
+    if (!$codigoProduto || !isset($produtoDetalhe)) {
+        die('Produto inexistente');
+    }
+
     require TEMPLATES . '/produto.php'; 
     // echo 'Detalhes do produto';
 }
