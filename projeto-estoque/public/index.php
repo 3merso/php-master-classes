@@ -10,7 +10,7 @@ require __DIR__ . '/../bootstrap.php';
 $url = isset($_GET['url']) ? $_GET['url'] : '/';
 
 if ($url == '/') {
-    include TEMPLATES . '/lista.php'; // apenas inclui, causa warning se não encontrado
+    include TEMPLATES . '/lista.phtml'; // apenas inclui, causa warning se não encontrado
     // require '../templates/lista.php'; // se não encontrado, fatal error
 }
 
@@ -32,6 +32,6 @@ if ($url == '/produto') {
         die('Produto inexistente');
     }
 
-    require TEMPLATES . '/produto.php'; 
+    require TEMPLATES . '/produto.phtml'; 
     // echo 'Detalhes do produto';
 }

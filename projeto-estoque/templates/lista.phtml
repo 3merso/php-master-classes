@@ -9,7 +9,7 @@
     <body>
         <?php foreach (PRODUTOS as $p) {
             echo $p['nome'] . '-' . $p['preco']; ?>
-         <a href="/?pagina=<?php echo $produto['codigo']?>">Ver produto</a>
+         <a href="<?php echo HOME ?>/?pagina=<?php echo $produto['codigo']?>">Ver produto</a>
         <?php } ?>
     </body>
 </html>
