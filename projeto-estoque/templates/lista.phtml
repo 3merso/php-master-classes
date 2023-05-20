@@ -2,14 +2,12 @@
 
 < ?php var_dump(PRODUTOS); -->
 
-<html>
-    <head>
-        <title>Listagem de produtos</title>
-    </head>
+<?php require_once TEMPLATES . '/includes/cabecalho.phtml' ?>
+
     <body>
         <?php foreach (PRODUTOS as $p) {
             echo $p['nome'] . '-' . $p['preco']; ?>
-         <a href="<?php echo HOME ?>/?pagina=<?php echo $produto['codigo']?>">Ver produto</a>
+         <a href="<?php echo HOME ?>/?url=produto&produto=<?php echo $p['codigo'] . '&codigo=' . $p['codigo']?>">Ver produto</a><br><hr>
         <?php } ?>
-    </body>
-</html>
+
+        <?php require_once TEMPLATES . '/includes/rodape.phtml' ?>
