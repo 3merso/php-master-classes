@@ -15,10 +15,9 @@ if ($url == '/') {
     // require '../templates/lista.php'; // se não encontrado, fatal error
 }
 
-if ($url == '/produto') {
-
+if ($url == 'produto') {
     $codigoProduto = isset($_GET['codigo']) ? $_GET['codigo'] : '';
-
+// var_dump($_GET);die;
     if ($codigoProduto) {
         $titulo = 'Detalhes do produto';
         $produtoDetalhe = '';
