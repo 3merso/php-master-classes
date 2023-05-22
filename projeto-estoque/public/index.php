@@ -43,3 +43,7 @@ if ($url == 'produto') {
     require TEMPLATES . '/produto.phtml'; 
     // echo 'Detalhes do produto';
 }
+
+if ($url == 'produto/criar') {
+    require TEMPLATES . '/criar-produto.phtml'; 
+}
