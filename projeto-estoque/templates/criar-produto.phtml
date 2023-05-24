@@ -1,7 +1,7 @@
 <?php require_once TEMPLATES . '/includes/cabecalho.phtml' ?>
 <h1>Criar produto</h1>
 
-<form action="">
+<form action="<?php echo HOME;?>?pagina=/produto/salvar" method="post">
     <div>
         <label for="nome-produto">Nome do produto</label>
         <input type="text" name="nome-produto" placeholder="Nome do produto" id="nome">
@@ -18,5 +18,6 @@
         <label for="preco">Preço do produto</label>
         <input type="text" name="preco" placeholder="Preço do produto" id="preco">
     </div>
+    <button>Salvar</button>
 </form>
 <?php require_once TEMPLATES . '/includes/rodape.phtml' ?>
