@@ -18,6 +18,17 @@
         <label for="preco">Preço do produto</label>
         <input type="text" name="preco" placeholder="Preço do produto" id="preco">
     </div>
+    <div>
+        <label for="quantidade">Quantidade em estoque</label>
+        <input type="number" name="quantidade" placeholder="Quantidade" id="quantidade">
+    </div>
+    <div>
+        <label for="status">Status</label>
+        <select name="status">
+            <option value="1">Ativo</option>
+            <option value="0">Inativo</option>
+        </select>
+    </div>
     <button>Salvar</button>
 </form>
 <?php require_once TEMPLATES . '/includes/rodape.phtml' ?>
