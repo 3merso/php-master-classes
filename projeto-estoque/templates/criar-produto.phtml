@@ -1,7 +1,7 @@
 <?php require_once TEMPLATES . '/includes/cabecalho.phtml' ?>
 <h1>Criar produto</h1>
 
-<form action="<?php echo HOME;?>?pagina=/produto/salvar" method="post">
+<form action="<?php echo HOME;?>?pagina=/produto/salvar" method="post" enctype="multipart/form-data">
     <div>
         <label for="nome-produto">Nome do produto</label>
         <input type="text" name="nome-produto" placeholder="Nome do produto" id="nome">
@@ -29,6 +29,23 @@
             <option value="0">Inativo</option>
         </select>
     </div>
+    <div>
+        <label for="foto">Foto do produto</label>
+        <input type="file" name="foto[]" multiple>
+    </div>
     <button>Salvar</button>
+    <!-- Extra 
+    inputs html
+            <input type="email" name="email">
+            <input type="color" name="color">
+            <input type="range" min="1" max="10" name="range">
+            <input type="date" name="date">
+            <input type="radio" name="genero" value="M" checked> Masculino
+            <input type="radio" name="genero" value="F"> Feminino
+            <input type="checkbox" name="termos" value="1">
+
+
+
+    -->
 </form>
 <?php require_once TEMPLATES . '/includes/rodape.phtml' ?>
