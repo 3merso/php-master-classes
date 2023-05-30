@@ -47,3 +47,7 @@ if ($url == 'produto') {
 if ($url == 'produto/criar') {
     require TEMPLATES . '/criar-produto.phtml'; 
 }
+
+if ($url == 'produto/salvar') {
+    var_dump($_POST); 
+}
