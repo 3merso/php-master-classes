@@ -18,3 +18,10 @@ var_dump($conexao);
 //     criado_em DATETIME,
 //     atualizado_em DATETIME,
 // )engine=innoDB;
+
+// INSERÇÃO NA TABELA DE PRODUTOS
+// INSERT INTO produtos(
+//     nome, descricao, sobre, preco, status, criado_em, atualizado_em
+// ) VALUES(
+// 'Produto teste', 'Descrição teste', 'Mais info', 29.9, 1, NOW(), NOW()
+// )
